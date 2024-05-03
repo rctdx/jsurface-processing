@@ -1,8 +1,13 @@
-NSurface ns;
+import java.awt.*;
+import processing.awt.*;
+
+JSurface surf;
 
 void setup() {
-  size(500, 500, JAVA2D);
-  ns = new NSurface(this);
-  
-  System.out.println(ns.getFrame().getClass());
+  size(50, 50, P2D);
+
+  surf = new JSurface(this);
+  surf.dispose();
+
+  println(surf.getRender());
 }
